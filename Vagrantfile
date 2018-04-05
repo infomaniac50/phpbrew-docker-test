@@ -6,13 +6,13 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  config.vm.define "icu-test-archlinux" do |config|
-    config.vm.box = 'archlinux/archlinux'
-
-    config.vm.provision :shell do |shell|
-      shell.path = 'archlinux/provision.sh'
-    end
-  end
+  # config.vm.define "icu-test-archlinux" do |config|
+  #   config.vm.box = 'archlinux/archlinux'
+  #
+  #   config.vm.provision :shell do |shell|
+  #     shell.path = 'archlinux/provision.sh'
+  #   end
+  # end
 
   config.vm.define "icu-test-centos-6" do |config|
     config.vm.box = 'centos/6'
