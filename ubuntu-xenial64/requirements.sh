@@ -23,6 +23,3 @@ apt-get install -y \
   libmhash-dev \
   libmhash2 \
   libxslt1-dev
-curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
-chmod u+x /phpbrew
-mv /phpbrew /usr/local/bin/

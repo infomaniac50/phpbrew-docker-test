@@ -19,6 +19,3 @@ apt-get install -y \
   libbz2-dev \
   libreadline-dev \
   libicu-dev
-curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
-chmod u+x /phpbrew
-mv /phpbrew /usr/local/bin/
