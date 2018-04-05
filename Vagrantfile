@@ -6,21 +6,21 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  # config.vm.define "phpbrew-archlinux" do |config|
-  #   config.vm.box = 'archlinux/archlinux'
-  #
-  #   config.vm.provider "virtualbox" do |v|
-  #     v.name = "phpbrew-archlinux"
-  #   end
-  #
-  #   config.vm.provision :shell do |shell|
-  #     shell.path = 'archlinux/requirements.sh'
-  #   end
-  #
-  #   config.vm.provision :shell, privileged: false do |shell|
-  #     shell.path = 'archlinux/phpbrew.sh'
-  #   end
-  # end
+  config.vm.define "phpbrew-archlinux" do |config|
+    config.vm.box = 'archlinux/archlinux'
+
+    config.vm.provider "virtualbox" do |v|
+      v.name = "phpbrew-archlinux"
+    end
+
+    config.vm.provision :shell do |shell|
+      shell.path = 'archlinux/requirements.sh'
+    end
+
+    config.vm.provision :shell, privileged: false do |shell|
+      shell.path = 'archlinux/phpbrew.sh'
+    end
+  end
 
   config.vm.define "phpbrew-centos-6" do |config|
     config.vm.box = 'centos/6'
