@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell, privileged: false do |shell|
-      shell.path = 'archlinux/phpbrew.sh'
+      shell.path = 'common/phpbrew.sh'
     end
   end
 
@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell, privileged: false do |shell|
-      shell.path = 'centos-6/phpbrew.sh'
+      shell.path = 'common/phpbrew.sh'
     end
   end
 
@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell, privileged: false do |shell|
-      shell.path = 'centos-7/phpbrew.sh'
+      shell.path = 'common/phpbrew.sh'
     end
   end
 
@@ -66,7 +66,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell, privileged: false do |shell|
-      shell.path = 'ubuntu-trusty64/phpbrew.sh'
+      shell.path = 'common/phpbrew.sh'
     end
   end
 
@@ -82,7 +82,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell, privileged: false do |shell|
-      shell.path = 'ubuntu-xenial64/phpbrew.sh'
+      shell.path = 'common/phpbrew.sh'
     end
   end
 
