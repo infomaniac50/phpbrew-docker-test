@@ -9,6 +9,10 @@ Vagrant.configure("2") do |config|
   # config.vm.define "icu-test-archlinux" do |config|
   #   config.vm.box = 'archlinux/archlinux'
   #
+  #   config.vm.provider "virtualbox" do |v|
+  #     v.name = "phpbrew-archlinux"
+  #   end
+  #
   #   config.vm.provision :shell do |shell|
   #     shell.path = 'archlinux/provision.sh'
   #   end
@@ -16,6 +20,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "icu-test-centos-6" do |config|
     config.vm.box = 'centos/6'
+
+    config.vm.provider "virtualbox" do |v|
+      v.name = "phpbrew-centos-6"
+    end
 
     config.vm.provision :shell do |shell|
       shell.path = 'centos-6/provision.sh'
@@ -25,6 +33,10 @@ Vagrant.configure("2") do |config|
   config.vm.define "icu-test-centos-7" do |config|
     config.vm.box = 'centos/7'
 
+    config.vm.provider "virtualbox" do |v|
+      v.name = "phpbrew-centos-7"
+    end
+
     config.vm.provision :shell do |shell|
       shell.path = 'centos-7/provision.sh'
     end
@@ -33,6 +45,10 @@ Vagrant.configure("2") do |config|
   config.vm.define "icu-test-ubuntu-trusty64" do |config|
     config.vm.box = 'ubuntu/trusty64'
 
+    config.vm.provider "virtualbox" do |v|
+      v.name = "phpbrew-ubuntu-trusty64"
+    end
+
     config.vm.provision :shell do |shell|
       shell.path = 'ubuntu-trusty64/provision.sh'
     end
@@ -40,6 +56,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "icu-test-ubuntu-xenial64" do |config|
     config.vm.box = 'ubuntu/xenial64'
+
+    config.vm.provider "virtualbox" do |v|
+      v.name = "phpbrew-ubuntu-xenial64"
+    end
 
     config.vm.provision :shell do |shell|
       shell.path = 'ubuntu-xenial64/provision.sh'
