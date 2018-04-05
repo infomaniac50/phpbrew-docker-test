@@ -6,7 +6,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  # config.vm.define "icu-test-archlinux" do |config|
+  # config.vm.define "phpbrew-archlinux" do |config|
   #   config.vm.box = 'archlinux/archlinux'
   #
   #   config.vm.provider "virtualbox" do |v|
@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   #   end
   # end
 
-  config.vm.define "icu-test-centos-6" do |config|
+  config.vm.define "phpbrew-centos-6" do |config|
     config.vm.box = 'centos/6'
 
     config.vm.provider "virtualbox" do |v|
@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.define "icu-test-centos-7" do |config|
+  config.vm.define "phpbrew-centos-7" do |config|
     config.vm.box = 'centos/7'
 
     config.vm.provider "virtualbox" do |v|
@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.define "icu-test-ubuntu-trusty64" do |config|
+  config.vm.define "phpbrew-ubuntu-trusty64" do |config|
     config.vm.box = 'ubuntu/trusty64'
 
     config.vm.provider "virtualbox" do |v|
@@ -54,7 +54,7 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.define "icu-test-ubuntu-xenial64" do |config|
+  config.vm.define "phpbrew-ubuntu-xenial64" do |config|
     config.vm.box = 'ubuntu/xenial64'
 
     config.vm.provider "virtualbox" do |v|
