@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   #   end
   #
   #   config.vm.provision :shell do |shell|
-  #     shell.path = 'archlinux/provision.sh'
+  #     shell.path = 'archlinux/requirements.sh'
   #   end
   # end
 
@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell do |shell|
-      shell.path = 'centos-6/provision.sh'
+      shell.path = 'centos-6/requirements.sh'
     end
   end
 
@@ -38,7 +38,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell do |shell|
-      shell.path = 'centos-7/provision.sh'
+      shell.path = 'centos-7/requirements.sh'
     end
   end
 
@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell do |shell|
-      shell.path = 'ubuntu-trusty64/provision.sh'
+      shell.path = 'ubuntu-trusty64/requirements.sh'
     end
   end
 
@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell do |shell|
-      shell.path = 'ubuntu-xenial64/provision.sh'
+      shell.path = 'ubuntu-xenial64/requirements.sh'
     end
   end
 
